@@ -308,20 +308,102 @@ button {
 }
 
 /* ===== Responsive Adjustments ===== */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
+  #header {
+    width: 98%;
+    padding: 10px 2vw;
+    font-size: 1em;
+  }
+  #headerElements {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 0.5em;
+  }
+  #headerLogos {
+    width: 100%;
+    justify-content: flex-end;
+  }
   #meContainer {
     flex-direction: column;
     text-align: center;
+    padding: 0 10px;
+    gap: 20px;
+    margin-top: 120px;
   }
   #bio {
     margin-bottom: 20px;
   }
   #personalImage {
     margin-top: 10px;
+    width: 180px;
+    height: 180px;
+    border-width: 0.5em;
   }
   #Projects {
     flex-direction: column;
     align-items: center;
+    gap: 10px;
+  }
+  .Project {
+    max-width: 98vw;
+    padding: 10px;
+  }
+  #projectsHeader {
+    margin-top: 120px;
+    font-size: 1.5em;
+  }
+  input, textarea, button {
+    width: 95vw;
+    left: 0;
+    max-width: 98vw;
+    font-size: 1em;
+  }
+  label {
+    left: 0;
+    font-size: 1em;
+    text-align: left;
+    margin-left: 2vw;
+  }
+  #form {
+    width: 100%;
+    padding: 0 2vw;
+  }
+  #timer-container {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 1.3em;
+  }
+  #header {
+    font-size: 0.9em;
+    padding: 6px 1vw;
+  }
+  .logo {
+    width: 28px;
+    height: 28px;
+  }
+  #github-logo {
+    width: 18px;
+    height: 18px;
+  }
+  #personalImage {
+    width: 110px;
+    height: 110px;
+    border-width: 0.3em;
+  }
+  .Project {
+    padding: 4px;
+    font-size: 0.95em;
+  }
+  #projectsHeader {
+    font-size: 1.1em;
+  }
+  input, textarea, button {
+    font-size: 0.95em;
+    padding: 7px;
   }
 }
 label {
